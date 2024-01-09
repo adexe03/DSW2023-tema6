@@ -10,9 +10,10 @@ class CarController
     echo "Esto es index de CarController";
   }
 
-  public function show()
+  public function show($params)
   {
-    echo "Esto es show de CarController";
+    $matricula = $params['matricula'];
+    echo "Esto es show de CarController: mostrando el coche con id: $matricula";
   }
 
   public function showCarClient($params)
