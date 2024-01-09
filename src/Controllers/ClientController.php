@@ -13,7 +13,9 @@ class ClientController
 
   public function index()
   {
-    echo "Esto es index de ClientController";
+    // echo "Esto es index de ClientController";
+    global $blade;
+    echo $blade->view()->make('client.index')->render();
   }
 
   public function show($params)

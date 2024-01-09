@@ -1,5 +1,12 @@
 <?php
+
+use Philo\Blade\Blade;
+
 require_once "../vendor/autoload.php";
+
+$views = '../src/views';
+$cache = '../cache';
+$blade = new Blade($views, $cache);
 
 // Router system
 $router = new AltoRouter();
@@ -8,6 +15,7 @@ require_once '../src/routers/router.php';
 
 // End of list
 $match = $router->match();
+
 if ($match) {
     $target = $match["target"];
     if (is_string($target) && strpos($target, "#") !== false) {

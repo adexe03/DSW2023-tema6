@@ -3,7 +3,8 @@
     "description": "programación por capas",
     "type": "project",
     "require": {
-        "altorouter/altorouter": "^2.0"
+        "altorouter/altorouter": "^2.0",
+        "philo/laravel-blade": "^3.1"
     },
     "autoload": {
         "psr-4": {
@@ -15,5 +16,10 @@
             "name": "Adexe Reyes",
             "email": "adexe.reyes.cb@gmail.com"
         }
-    ]
+    ],
+    "config": {
+        "allow-plugins": {
+            "kylekatarnls/update-helper": true
+        }
+    }
 }
