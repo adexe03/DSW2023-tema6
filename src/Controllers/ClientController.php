@@ -15,7 +15,9 @@ class ClientController
   {
     // echo "Esto es index de ClientController";
     global $blade;
-    echo $blade->view()->make('client.index')->render();
+    $vip = false;
+    $clients = ['Pepe', 'Marta', '', 'Lucia', 'Andres'];
+    echo $blade->view()->make('client.index', compact("vip", "clients"))->render();
   }
 
   public function show($params)

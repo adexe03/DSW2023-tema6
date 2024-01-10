@@ -1,16 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.master')
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
+@section('title', 'List cars')
 
-<body>
-  <h1>Show en CAR CONTROLLER</h1>
+@section('subtitle', 'Listado de coches')
+
+@section('container')
   <p>Nombre: {{$name}}</p>
   <p>Matrícula: {{$matricula}}</p>
-</body>
-
-</html>
+@endsection
