@@ -1,5 +1,5 @@
 {
-    "name": "adexe/tema6",
+    "name": "chen/tema6",
     "description": "programación por capas",
     "type": "project",
     "require": {
@@ -8,13 +8,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Adexe\\Tema6\\": "src/"
+            "chen\\Tema6\\": "src/"
         }
     },
     "authors": [
         {
-            "name": "Adexe Reyes",
-            "email": "adexe.reyes.cb@gmail.com"
+            "name": "chen",
+            "email": "chenminghai79@gmail.com"
         }
     ],
     "config": {

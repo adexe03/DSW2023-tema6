@@ -1,6 +1,6 @@
 <?php
 
-namespace Adexe\Tema6\Controllers;
+namespace chen\Tema6\Controllers;
 
 class CarController
 {
