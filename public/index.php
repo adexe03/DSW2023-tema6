@@ -1,5 +1,5 @@
 <?php
-
+error_reporting(E_ALL & ~E_DEPRECATED);
 use Philo\Blade\Blade;
 
 require_once "../vendor/autoload.php";
@@ -20,7 +20,7 @@ if ($match) {
     $target = $match["target"];
     if (is_string($target) && strpos($target, "#") !== false) {
         list($controller, $action) = explode("#", $target);
-        $controller = "Adexe\\Tema6\\Controllers\\" . $controller;
+        $controller = "chen\\Tema6\\Controllers\\" . $controller;
         $controller = new $controller($router);
         $controller->$action($match["params"]);
     } else {
